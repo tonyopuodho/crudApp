@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <h1> <span>Crud</span> application</h1>
+    </nav>
+    <div class="mesg">
+        <h3 id="msg"></h3>
+    </div>
+    <div class="bar">
+        <button id="userbtn"><a href="user.html">Add user</a></button>
+        <div class="search">
+            <input type="text" placeholder="Enter text" id="search">
+            <button id="searchBtn">Search</button>
+        </div>
+    </div>
+    <h1 class="user">Users</h1>
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Actions</th>
+            <tbody id="tbody"></tbody>
+        </thead>
+    </table>
+    <div class="view-table">
+        <div class="name-content">
+            <div class="name">
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname">
+                <label for="email">email</label>
+                <input type="text" id="email">
+            </div>
+            <div class="contact">
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone">
+            </div>
+        
+        </div>
+        <button id="editBtn">Edit</button>
+    </div>
+    <div class="view-element">
+           <div class="name-content">
+            <div class="name">
+                <label for="firstname">First name</label>
+                <input type="text" id="vfirstname" disabled>
+                <label for="email">email</label>
+                <input type="text" id="vemail" disabled>
+            </div>
+            <div class="contact">
+                <label for="lastname">Last name</label>
+                <input type="text" id="vlastname" disabled>
+                <label for="phone">Phone</label>
+                <input type="text" id="vphone" disabled>
+            </div>
+        
+        </div>
+        <button id="closeBtn">close</button>
+
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
